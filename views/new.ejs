@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+
+<div class="container d-flex justify-content-center">
+    <div class="card mt-4" style="width: 50%;">
+        <div class="card-body ">
+            <h3 class="card-title">New Blog</h3>
+            <form action="/blogs" method="POST">
+                <div class="form-group">
+                    <label for="" class="mt"><h6>Title</h6></label>
+                    <input type="text" name="blog[title]" class="form-control" id="title" placeholder="title" required>
+                    <label for="" class="mt-4"><h6>Image URL</h6></label>
+                    <input type="text" name="blog[image]" class="form-control" id="image" placeholder="image">
+                    <label for="" class="mt-4"><h6>Blog Content</h6></label>
+                    <textarea type="textarea" name="blog[body]" class="form-control" id="body" placeholder="blog post goes here" required></textarea>
+                    <!-- <input type="submit" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+                    <button type="submit" class="btn btn-outline-success mt-4">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</div>
+
+
+<%- include("partials/footer") %> 
